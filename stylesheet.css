@@ -63,19 +63,36 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 .list-group-items:nth-child(odd) {
-    margin-left: 5rem;
-}
+    animation-name: comeinleft;
 
+}
 .list-group-items:nth-child(even) {
-    margin-right: 5rem;
+    animation-name: comeinright;
 }
 
 .list-group-flush {
     list-style-type: none;
 }
+
+@keyframes comeinleft {
+    
+    100%{ margin-left: 5rem; }
+
+}
+
+@keyframes comeinright {
+
+    100%{ margin-right: 5rem; }
+
+}
+
+
 
 /* List of Services */
 /* 1 */
@@ -83,7 +100,6 @@ body {
     background-color: grey;
 
 }
-
 .color-prnt:hover {
     background-color: transparent;
     border: 1px solid grey;
@@ -95,7 +111,6 @@ body {
     background-color: #5f90ec;
 
 }
-
 .pancard:hover {
     background-color: transparent;
     border: 1px solid #5f90ec;
@@ -107,7 +122,6 @@ body {
     background-image: linear-gradient(to right, #CC292B, #E8B012);
 
 }
-
 .adhaarcard:hover {
     border: 1px solid red;
     background-image: linear-gradient(to right, #CC292B, #E8B012);
@@ -121,7 +135,6 @@ body {
 .samagra {
     background-color: #fe581c;
 }
-
 .samagra:hover {
     background-color: transparent;
     border: 1px solid #fe581c;
@@ -132,7 +145,6 @@ body {
 .railreservation {
     background-image: linear-gradient(to right, #000075, #CCC7D2);
 }
-
 .railreservation:hover {
     border: 1px solid #000075;
     color: #000075;
@@ -143,7 +155,6 @@ body {
 .moneytransfer {
     background-color: #85bb65;
 }
-
 .moneytransfer:hover {
     background-color: transparent;
     border: 1px solid #85bb65;
@@ -154,7 +165,6 @@ body {
 .mponline {
     background-color: #00923a
 }
-
 .mponline:hover {
     background-color: transparent;
     border: 1px solid #e25b21;
@@ -163,13 +173,13 @@ body {
 
 /* 8 */
 .enghintyping {
-    background-color: transparent;
-    border: 1px solid #000;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 .enghintyping:hover{
-    background:#000;
-    color: #fff
+    background:transparent;
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* 9 */
